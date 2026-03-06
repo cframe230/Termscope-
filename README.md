@@ -4,7 +4,7 @@ TermScope is a Linux/server monitoring TUI built with **Textual** and **psutil**
 It combines a live resource dashboard, a neofetch-style distro panel, and an interactive process explorer with keyboard-driven search, sorting, and process actions.
 
 <p align="center">
-  <img src="assets/termscope-dashboard.svg" alt="TermScope dashboard screenshot" width="1100" />
+  <img src="assets/P1.png" alt="TermScope dashboard screenshot" width="1100" />
 </p>
 
 ## Highlights
@@ -272,4 +272,4 @@ termscope
 
 ## License
 
-No project license has been added yet.
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE).
