@@ -1,0 +1,340 @@
+Screen {
+    layout: vertical;
+}
+
+#header {
+    height: 3;
+    padding: 1 2;
+    background: #2b3440;
+    color: $text;
+}
+
+#main {
+    height: 1fr;
+}
+
+#metrics-pane,
+#process-pane {
+    width: 1fr;
+    height: 1fr;
+    padding: 1;
+    background: #11161d;
+}
+
+#metrics-stack {
+    height: 1fr;
+}
+
+#metrics,
+#distro-art,
+#top-processes,
+#processes-table {
+    border: round #5f7a95;
+    background: #11161d;
+    color: $text;
+}
+
+#metrics {
+    height: 1fr;
+    min-height: 8;
+    padding: 1;
+}
+
+#distro-art {
+    height: auto;
+    min-height: 9;
+    margin-top: 1;
+    padding: 1 2;
+    content-align: left top;
+}
+
+#top-processes,
+#processes-table {
+    height: 1fr;
+    padding: 1;
+    scrollbar-size-vertical: 1;
+    scrollbar-size-horizontal: 1;
+    scrollbar-background: #05080c;
+    scrollbar-background-hover: #0b1017;
+    scrollbar-background-active: #0b1017;
+    scrollbar-color: #7b93ad;
+    scrollbar-color-hover: #a8cfff;
+    scrollbar-color-active: #f3f8ff;
+    scrollbar-corner-color: #05080c;
+}
+
+#processes-title {
+    height: 1;
+    padding: 0 2;
+    color: #84a9d8;
+}
+
+#footer {
+    height: 1;
+    padding: 0 2;
+    background: $panel;
+    color: $text-muted;
+}
+
+.theme-default #header {
+    background: #2b3440;
+}
+
+.theme-default #metrics-pane,
+.theme-default #process-pane,
+.theme-default #metrics,
+.theme-default #distro-art,
+.theme-default #top-processes,
+.theme-default #processes-table {
+    background: #11161d;
+    border: round #5f7a95;
+}
+
+.theme-default #processes-title {
+    color: #84a9d8;
+}
+
+.theme-default #top-processes,
+.theme-default #processes-table {
+    scrollbar-background: #05080c;
+    scrollbar-background-hover: #0b1017;
+    scrollbar-background-active: #0b1017;
+    scrollbar-color: #7b93ad;
+    scrollbar-color-hover: #a8cfff;
+    scrollbar-color-active: #f3f8ff;
+    scrollbar-corner-color: #05080c;
+}
+
+.theme-arch #header,
+.theme-alpine #header {
+    background: #13314b;
+}
+
+.theme-arch #metrics-pane,
+.theme-arch #process-pane,
+.theme-arch #metrics,
+.theme-arch #distro-art,
+.theme-arch #top-processes,
+.theme-arch #processes-table,
+.theme-alpine #metrics-pane,
+.theme-alpine #process-pane,
+.theme-alpine #metrics,
+.theme-alpine #distro-art,
+.theme-alpine #top-processes,
+.theme-alpine #processes-table {
+    background: #0d1722;
+    border: round #3ea0ff;
+}
+
+.theme-arch #processes-title,
+.theme-alpine #processes-title {
+    color: #6ab7ff;
+}
+
+.theme-arch #top-processes,
+.theme-arch #processes-table,
+.theme-alpine #top-processes,
+.theme-alpine #processes-table {
+    scrollbar-background: #040c13;
+    scrollbar-background-hover: #0d1a28;
+    scrollbar-background-active: #0d1a28;
+    scrollbar-color: #4096ee;
+    scrollbar-color-hover: #6fc0ff;
+    scrollbar-color-active: #e6f4ff;
+    scrollbar-corner-color: #040c13;
+}
+
+.theme-cachyos #header {
+    background: #2b123f;
+}
+
+.theme-cachyos #metrics-pane,
+.theme-cachyos #process-pane,
+.theme-cachyos #metrics,
+.theme-cachyos #distro-art,
+.theme-cachyos #top-processes,
+.theme-cachyos #processes-table {
+    background: #160d22;
+    border: round #b46bff;
+}
+
+.theme-cachyos #processes-title {
+    color: #d8b4ff;
+}
+
+.theme-cachyos #top-processes,
+.theme-cachyos #processes-table {
+    scrollbar-background: #0d0613;
+    scrollbar-background-hover: #1b0d29;
+    scrollbar-background-active: #1b0d29;
+    scrollbar-color: #a45cff;
+    scrollbar-color-hover: #ca95ff;
+    scrollbar-color-active: #f3e8ff;
+    scrollbar-corner-color: #0d0613;
+}
+
+.theme-ubuntu #header {
+    background: #4d1d14;
+}
+
+.theme-ubuntu #metrics-pane,
+.theme-ubuntu #process-pane,
+.theme-ubuntu #metrics,
+.theme-ubuntu #distro-art,
+.theme-ubuntu #top-processes,
+.theme-ubuntu #processes-table {
+    background: #22120d;
+    border: round #e95420;
+}
+
+.theme-ubuntu #processes-title {
+    color: #ff9b73;
+}
+
+.theme-ubuntu #top-processes,
+.theme-ubuntu #processes-table {
+    scrollbar-background: #110805;
+    scrollbar-background-hover: #22110c;
+    scrollbar-background-active: #22110c;
+    scrollbar-color: #df5f2f;
+    scrollbar-color-hover: #ff915f;
+    scrollbar-color-active: #ffe3da;
+    scrollbar-corner-color: #110805;
+}
+
+.theme-debian #header {
+    background: #4a1029;
+}
+
+.theme-debian #metrics-pane,
+.theme-debian #process-pane,
+.theme-debian #metrics,
+.theme-debian #distro-art,
+.theme-debian #top-processes,
+.theme-debian #processes-table {
+    background: #1d0d14;
+    border: round #d70a53;
+}
+
+.theme-debian #processes-title {
+    color: #ff6e9d;
+}
+
+.theme-debian #top-processes,
+.theme-debian #processes-table {
+    scrollbar-background: #0f050b;
+    scrollbar-background-hover: #210b16;
+    scrollbar-background-active: #210b16;
+    scrollbar-color: #ca1c5d;
+    scrollbar-color-hover: #ff6c9a;
+    scrollbar-color-active: #ffe0eb;
+    scrollbar-corner-color: #0f050b;
+}
+
+.theme-fedora #header {
+    background: #112b4a;
+}
+
+.theme-fedora #metrics-pane,
+.theme-fedora #process-pane,
+.theme-fedora #metrics,
+.theme-fedora #distro-art,
+.theme-fedora #top-processes,
+.theme-fedora #processes-table {
+    background: #0d1522;
+    border: round #51a2ff;
+}
+
+.theme-fedora #processes-title {
+    color: #8cc0ff;
+}
+
+.theme-fedora #top-processes,
+.theme-fedora #processes-table {
+    scrollbar-background: #050c14;
+    scrollbar-background-hover: #0d1a28;
+    scrollbar-background-active: #0d1a28;
+    scrollbar-color: #4592e6;
+    scrollbar-color-hover: #79bcff;
+    scrollbar-color-active: #e7f3ff;
+    scrollbar-corner-color: #050c14;
+}
+
+.theme-nixos #header {
+    background: #0f3140;
+}
+
+.theme-nixos #metrics-pane,
+.theme-nixos #process-pane,
+.theme-nixos #metrics,
+.theme-nixos #distro-art,
+.theme-nixos #top-processes,
+.theme-nixos #processes-table {
+    background: #0a1820;
+    border: round #7ad9f5;
+}
+
+.theme-nixos #processes-title {
+    color: #a8ecff;
+}
+
+.theme-nixos #top-processes,
+.theme-nixos #processes-table {
+    scrollbar-background: #040d12;
+    scrollbar-background-hover: #0a1a22;
+    scrollbar-background-active: #0a1a22;
+    scrollbar-color: #4fcbe8;
+    scrollbar-color-hover: #8cecff;
+    scrollbar-color-active: #e5fbff;
+    scrollbar-corner-color: #040d12;
+}
+
+.theme-gentoo #header {
+    background: #2a2248;
+}
+
+.theme-gentoo #metrics-pane,
+.theme-gentoo #process-pane,
+.theme-gentoo #metrics,
+.theme-gentoo #distro-art,
+.theme-gentoo #top-processes,
+.theme-gentoo #processes-table {
+    background: #151225;
+    border: round #b39ddb;
+}
+
+.theme-gentoo #processes-title {
+    color: #d1c4e9;
+}
+
+.theme-gentoo #top-processes,
+.theme-gentoo #processes-table {
+    scrollbar-background: #0b0912;
+    scrollbar-background-hover: #171225;
+    scrollbar-background-active: #171225;
+    scrollbar-color: #9f88c8;
+    scrollbar-color-hover: #cfb8f1;
+    scrollbar-color-active: #f6eeff;
+    scrollbar-corner-color: #0b0912;
+}
+
+ConfirmKillScreen {
+    align: center middle;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+#confirm-kill-dialog {
+    width: 50;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $surface;
+    color: $text;
+    content-align: center middle;
+}
+
+#confirm-kill-dialog.critical {
+    border: round $error;
+    background: $error-darken-3;
+    color: $text;
+}
